@@ -1,0 +1,7 @@
+{'username': 'test', 'passwd_md5': '098f6bcd4621d373cade4e832627b4f6', 'name_or_vxname': '张任宇', 'passwd_origin': 'test'}
+{'username': 'test2', 'passwd_md5': 'ad0234829205b9033196ba818f7a872b', 'name_or_vxname': '张任宇', 'passwd_origin': 'test2'}
+{'username': 'test3', 'passwd_md5': 'c4ca4238a0b923820dcc509a6f75849b', 'name_or_vxname': '1'}
+{'username': 'hikonaka', 'passwd_md5': '25d55ad283aa400af464c76d713c07ad', 'name_or_vxname': 'aaaz123'}
+{'username': 'anyway', 'passwd_md5': '251ecf186304443979f1988915cfad97', 'name_or_vxname': 'anyway'}
+{'username': 'shirley', 'passwd_md5': '50ea78f1fa499374772d075ae1a577ee', 'name_or_vxname': 'ty'}
+{'username': 'ABCDEFG', 'passwd_md5': 'e10adc3949ba59abbe56e057f20f883e', 'name_or_vxname': 'ABDEFG'}
