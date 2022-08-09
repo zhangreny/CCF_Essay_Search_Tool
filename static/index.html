@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBLP-CCFA论文查询小工具</title>
+    <link rel="stylesheet" href="/static/index.css">
+	<link rel="shortccut icon" href="/static/images/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="from-box">
+            <!-- 注册 -->
+            <div class="register-box hidden">
+                <h1>register</h1>
+                <input type="text" placeholder="用户名" id="username_register">
+                <input type="password" placeholder="密码" id="passwd_register">
+                <input type="password" placeholder="确认密码" id="confirmpasswd_register">
+                <input type="text" placeholder="你的姓名或微信名" id="nameorvxname_register">
+                <button id="submit_user_register" onclick="user_register()">注册</button>
+            </div>
+            <!-- 登录 -->
+            <div class="login-box">
+                <h1>login</h1>
+                <input type="text" placeholder="用户名" id="username_login">
+                <input type="password" placeholder="密码" id="passwd_login">
+                <button id="submit_user_login" onclick="user_login()">登录</button>
+            </div>
+        </div>
+        <div class="con-box left">
+            <h2>欢迎使用<span>基于DBLP</span></h2>  
+            <p>CCF论文查询小工具<span>v0.1.0</span></p>          
+            <img src="/static/images/3.png" alt="">
+            <p>已有账号</p>
+            <button id="login">去登录</button>
+        </div>
+        <div class="con-box right">
+            <h2>欢迎使用<span>基于DBLP</span></h2>  
+            <p>CCF论文查询小工具<span>v0.1.0</span></p>
+            <img src="/static/images/3.png" alt="">
+            <p>没有账号?</p>
+            <button id="register">去注册</button>
+        </div>
+    </div>
+    <script>
+        //要操作到的元素
+        let login = document.getElementById("login");
+        let register = document.getElementById("register");
+        let form_box = document.getElementsByClassName("from-box")[0];
+        let register_box = document.getElementsByClassName("register-box")[0];
+        let login_box = document.getElementsByClassName("login-box")[0];
+        //点击去注册按钮点击事件
+        register.addEventListener('click',()=>{
+            form_box.style.transform='translateX(80%)';
+            login_box.classList.add('hidden');
+            register_box.classList.remove('hidden');
+        })
+        //点击去登录按钮点击事件
+        login.addEventListener('click',()=>{
+            form_box.style.transform='translateX(0%)';
+            register_box.classList.add('hidden');
+            login_box.classList.remove('hidden');
+        })
+    </script>
+	<script src="/static/index.js"></script>
+	<!-- 别人的script -->
+	<!-- <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script> -->
+	<!-- <script src="https://cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script> -->
+	<script src="/static/sweetalert.js"></script>
+	<script src="/static/jquery.js"></script>
+</body>
+</html>
